@@ -9,7 +9,7 @@ This study aims to evaluate the performance of hybrid quantum-classical neural n
 The repo contains six separate files with the code and results for six different fundus datasets: APTOS, G1020, GlaucomaFundus, IDRID, MESSIDOR, and PAPILA. 
 
 
-Links to Different Datasets:
+Dataset :
 
 |    Dataset    |      Link     |
 | ------------- | ------------- |
