@@ -20,3 +20,5 @@ IDRID: https://drive.google.com/file/d/1c6zexA705z-ANEBNXJOBsk6uCvRnzmr3/view
 PAPILA: https://drive.google.com/file/d/1JltYs7WRWEU0yyki1CQw5-10HEbqCMBE/view
 
 Glaucoma_Fundus: https://drive.google.com/file/d/18vSazOYDsUGdZ64gGkTg3E6jiNtcrUrI/view
+
+G1020: https://drive.google.com/file/d/1oVKiUo9hqUwbjOf_35BS89R2-gmDcGRJ/view?usp=sharing
