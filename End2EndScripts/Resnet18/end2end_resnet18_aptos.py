@@ -8,7 +8,7 @@ from torchvision import datasets, transforms
 import copy
 import random
 from models.Classical_Resnet_18 import NormalModel
-from models.Hybrid_Quantum-Classical_Resnet_18 import QuantumHybridModel
+from models.Hybrid_Quantum-Classical_Resnet18 import QuantumHybridModel
 from trainers_testers import train_validate_model, test 
 from utils import plot, set_seed, load_data
 
@@ -25,8 +25,8 @@ for i in range(seeds):
     print(f"Experiment with Seed {seed}:")
     set_seed(seed)
     train_loader, valid_loader, test_loader = load_data(batch_size=batch_size, dataset=dataset)
-    model = NormalModel(num_classes=5)
-    hybrid_model = QuantumHybridModel(num_classes=5)
+    model = NormalModel(num_classes=num_classes)
+    hybrid_model = QuantumHybridModel(num_classes=num_classes)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model_name_hybrid = 'quantum_hybrid_model'
     model_name_normal = 'normal_model'
