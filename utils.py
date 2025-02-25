@@ -4,6 +4,51 @@ from pennylane import numpy as np
 import random
 import numpy as np
 
+def load_data(batch_size, dataset):
+
+  train_transform = transforms.Compose([
+      transforms.Resize((224, 224)),
+      transforms.RandomHorizontalFlip(),
+      transforms.ToTensor(),
+      transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+  ])
+
+  valid_test_transform = transforms.Compose([
+      transforms.Resize((224, 224)),
+      transforms.ToTensor(),
+      transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+  ])
+
+  if dataset == 'APTOS':
+    data_dir = "../APTOS2019/"
+
+  elif dataset == "IDRID":
+    data_dir = "../IDRID_images/"
+
+  elif dataset == "Messidor":
+    data_dir = "../MESSIDOR2/"
+
+  elif dataset == "GlaucomaFundus":
+    data_dir = "../Glaucoma_fundus/"
+
+  elif dataset == "PAPILA":
+    data_dir = "../PAPILA/"
+
+  elif dataset == 'G1020':
+    data_dir = "../G1020/"
+
+
+  train_dataset = datasets.ImageFolder(root=data_dir + 'train', transform=train_transform)
+  val_dataset = datasets.ImageFolder(root=data_dir + 'val', transform=valid_test_transform)
+  test_dataset = datasets.ImageFolder(root=data_dir + 'test', transform=valid_test_transform)
+
+  train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, drop_last=False)
+  valid_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+  test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+
+  return train_loader, valid_loader, test_loader
+
+
 def plot(quantum_loss, normal_loss, quantum_acc, normal_acc, quantum_auc, normal_auc):
     plt.style.use("default")
 
@@ -52,3 +97,4 @@ def set_seed(seed):
     np.random.seed(seed)
     random.seed(seed)
     torch.backends.cudnn.deterministic = True
+
