@@ -27,3 +27,14 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 | [Glaucoma_Fundus](https://drive.google.com/file/d/18vSazOYDsUGdZ64gGkTg3E6jiNtcrUrI/view)  | The GlaucomaFundus dataset is a glaucoma-focused dataset with 1544 fundus images. The dataset was produced in South Korea and is labeled with three-category classification (Non-Glaucoma, Early Glaucoma, and Glaucoma). |
 | [G1020](https://drive.google.com/file/d/1oVKiUo9hqUwbjOf_35BS89R2-gmDcGRJ/view)  | The G1020 dataset is a glaucoma-focused dataset with 1020 fundus images. The dataset was produced in Germany and is labeled with binary classification (Non-Glaucoma and Glaucoma). |
 
+
+ToDO:
+-Move notebooks to notebook directory
+-in the data directory, make a readme and describe the source of data and if necessary mention save them here
+-fill the scripts:
+-- save all model definitions including retfound in the models.py
+-- save all the trainers, testers and evaluators definitions in trainers_testers.py
+-- put any other function and class definitions in utils.py
+
+-for each dataset make a script e.g. main_end2end_aptos.py and include training and evaluation and saving the pickles
+-fill free to have a seperate script for plotting
