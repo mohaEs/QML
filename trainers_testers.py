@@ -29,6 +29,8 @@ import pickle
 import math
 from itertools import cycle
 
+
+
 def train_model(model, train_loader, optimizer, criterion):
     model.train()
     train_loss = 0.0
