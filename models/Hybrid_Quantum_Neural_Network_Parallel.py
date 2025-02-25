@@ -1,3 +1,17 @@
+import pennylane as qml
+from pennylane import numpy as np
+from pennylane.templates import RandomLayers
+import torch
+import torch.nn as nn
+import torchvision.models as models
+import torchvision.transforms as transforms
+from torch.utils.data import Dataset, DataLoader, Sampler
+import torch.optim as optim
+from torch.optim import lr_scheduler
+import torchvision
+from torchvision import datasets, transforms
+
+
 step = 0.0004               # Learning rate
 batch_size = 4              # Number of samples for each training step
 q_delta = 0.01              # Initial spread of random quantum weights
