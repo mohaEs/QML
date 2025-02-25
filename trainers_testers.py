@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import os
-from google.colab import drive
 import cv2
 from sklearn.model_selection import train_test_split
 import pandas as pd
