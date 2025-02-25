@@ -9,7 +9,7 @@ import torchvision
 from torchvision import datasets, transforms
 
 
-class Resnet18(nn.Module):
+class NormalModel(nn.Module):
   def __init__(self, freeze, num_classes, device='cuda'):
         super(NormalModel, self).__init__()
 
