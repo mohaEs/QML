@@ -48,7 +48,8 @@ for i in range(seeds):
         model_name=model_name_hybrid,
         train_loader=train_loader,
         valid_loader=valid_loader,
-        seed=seed
+        seed=seed,
+        quantum=True
     )
     
     plot(hybrid_train_losses, normal_train_losses, hybrid_train_accs, normal_train_accs, hybrid_train_aucs, normal_train_aucs)
