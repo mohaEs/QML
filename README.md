@@ -8,9 +8,9 @@ Supervisors: Dr. Mohammad Eslami, Dr. Saber Kazeminisab, Dr. Tobias Elze
 **Abstract:** PASTE ABSTRACT
 
 ## Repository Information
-This repository aims to evaluate the performance of hybrid quantum-classical neural networks compared to classical convolutional networks for the detection of glaucoma and diabetic retinopathy. This benchmark is crucial for the development of novel quantum machine learning techniques for medical diagnosis, specifically for fundus diseases.
+This repository aims to evaluate the performance of various quantum machine learning algorithms compared to classical machine learning algorithms. for the detection of glaucoma and diabetic retinopathy. This benchmark is crucial for the development of novel quantum machine learning techniques for medical diagnosis, specifically for fundus diseases.
 
-There are six notebooks with results for six different fundus datasets: APTOS, G1020, GlaucomaFundus, IDRID, MESSIDOR, and PAPILA. Each notebook presents the reproducible procedure that we followed in comparing the performance of Hybrid Quantum-Classical Neural Networks and Classical Convolutional Neural Networks.
+There are six notebooks with results for six different fundus datasets: APTOS, G1020, GlaucomaFundus, IDRID, MESSIDOR, and PAPILA. 
 
 Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for any questions or concerns.
 
