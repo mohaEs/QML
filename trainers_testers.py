@@ -110,8 +110,7 @@ def validate_model(model, valid_loader, criterion):
 
     return avg_val_loss, accuracy, avg_auroc
 
-
-def train_validate_model(n_epochs, model, model_name, train_loader, valid_loader, seed):
+def train_validate_model(n_epochs, model, model_name, train_loader, valid_loader, seed, quantum=False):
 
   criterion = nn.CrossEntropyLoss()
   optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
@@ -149,6 +148,51 @@ def train_validate_model(n_epochs, model, model_name, train_loader, valid_loader
       train_loss, train_accuracy, train_auroc = train_model(model, train_loader, optimizer, criterion)
       val_loss, val_accuracy, val_auroc = validate_model(model, valid_loader, criterion)
 
+
+      print(f'Training Loss: {train_loss:.4f}, Training Accuracy: {train_accuracy:.2f}%, Training AUROC: {train_auroc:.4f}')
+      print(f'Validation Loss: {val_loss:.4f}, Validation Accuracy: {val_accuracy:.2f}%, Validation AUROC: {val_auroc:.4f}')
+      train_losses.append(train_loss)
+      train_accuracies.append(train_accuracy)
+      train_aucs.append(train_auroc)
+      val_losses.append(val_loss)
+      val_accuracies.append(val_accuracy)
+      val_aucs.append(val_auroc)
+
+      if epoch >= lr_warmup_epochs:
+            scheduler.step()
+
+      if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            best_model_weights = model.state_dict()
+            epochs_without_improvement = 0  # Reset counter
+
+      else:
+            epochs_without_improvement += 1
+
+      if epochs_without_improvement >= early_stopping_patience:
+            print(f"Early stopping triggered after {epoch+1} epochs.")
+            break
+
+  model.load_state_dict(best_model_weights)
+
+  if quantum:
+    torch.save(model.state_dict(), os.path.join(MODEL_SAVE_PATH, f'{model_name}_{seed}.pth'))
+  else:
+    torch.save(model, os.path.join(MODEL_SAVE_PATH, f'{model_name}_{seed}.pth'))
+
+  metrics = {
+        "train_losses": train_losses,
+        "train_accuracies": train_accuracies,
+        "train_aucs": train_aucs,
+        "val_losses": val_losses,
+        "val_accuracies": val_accuracies,
+        "val_aucs": val_aucs
+    }
+
+  with open(os.path.join(MODEL_SAVE_PATH, f'{model_name}_{seed}_metrics.pkl'), 'wb') as f:
+        pickle.dump(metrics, f)
+
+  return model, train_losses, train_accuracies, val_losses, val_accuracies, train_aucs, val_aucs
 
 
 def test(model_hybrid, model_normal, test_loader, num_classes):
