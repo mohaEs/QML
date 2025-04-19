@@ -4,10 +4,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import os
 
-num_qubits = 4
-batch_size = 4
-device = qml.device("default.qubit", wires=num_qubits)
-
 
 def quantum_feature_map(x, num_qubits=4):
     device = qml.device("default.qubit", wires=num_qubits)
