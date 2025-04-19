@@ -4,9 +4,6 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import os
 
-num_qubits = 4
-batch_size = 4
-device = qml.device("default.qubit", wires=num_qubits)
 
 def run_qsvm(X_train, y_train, X_val, y_val, X_test, y_test, num_qubits=4):
     dev = qml.device("default.qubit", wires=num_qubits)
