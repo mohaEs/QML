@@ -6,6 +6,11 @@ import torch
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.utils import shuffle
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report
+from itertools import cycle
+import seaborn as sns
 
 imagenet_mean = np.array([0.485, 0.456, 0.406])
 imagenet_std = np.array([0.229, 0.224, 0.225])
@@ -135,15 +140,6 @@ def load_and_shuffle_data(seed=42, num_qubits=4):
             val_features_scaled, val_labels_encoded,
             test_features_scaled, test_labels_encoded,
             label_encoder.classes_)
-
-import os
-import pickle
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-from sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report
-from itertools import cycle
-import seaborn as sns
 
 def load_all_results(data_dir="qmlData"):
     all_results = {}
