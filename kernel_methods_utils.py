@@ -38,14 +38,6 @@ def run_one_image(img, model):
     latent = torch.squeeze(latent)
 
     return latent
-     
-# download pre-trained RETFound
-chkpt_dir = './RETFound_MAE/RETFound_cfp_weights.pth'
-model_ = prepare_model(chkpt_dir, 'vit_large_patch16')
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model_.to(device)
-print('Model loaded.')
 
 def feature_extract(data_path, model_):
     model_.eval()
