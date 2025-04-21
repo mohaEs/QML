@@ -1,27 +1,20 @@
-# Quantum Machine Learning Benchmark
+# Code for "Reproducibility Report: Quantum Machine Learning Methods in Fundus Analysis – A Benchmark Study"
 
-## Reproducibility Report: Quantum Machine Learning Methods in Fundus Analysis – A Benchmark Study.
-Authors: Gajan Mohan Raj, Zayan Hasan
+This study aims to evaluate the performance of various quantum machine learning algorithms compared to classical machine learning algorithms for the detection of glaucoma and diabetic retinopathy. Four different quantum machine learning algorithms (Hybrid Quantum-Classical ResNet-18, Hybrid Quantum Neural Network-Parallel, Quantum Support Vector Machines, and Quantum K-Nearest Neighbors Algorithms) were tested alongside their classical counterparts (Classical ResNet-18, Classical Convolutional Neural Network, Classical Support Vector Machines, and Classical K-Nearest Neighbors Algorithms) were tested on six different fundus datasets: APTOS (Diabetic Retinopathy), IDRID (Diabetic Retinopathy), MESSIDOR (Diabetic Retinopathy, G1020 (Glaucoma), GlaucomaFundus (Glaucoma), and PAPILA (Glaucoma). This open-source benchmark with reproducible scripts is the first-of-its-kind in opthalmic AI and is crucial for the reliable development of novel quantum machine learning techniques for medical diagnosis.
 
-Supervisors: Dr. Mohammad Eslami, Dr. Saber Kazeminisab, Dr. Tobias Elze
-
-## Repository Information
-This repository aims to evaluate the performance of various quantum machine learning algorithms compared to classical machine learning algorithms. for the detection of glaucoma and diabetic retinopathy. This benchmark is crucial for the development of novel quantum machine learning techniques for medical diagnosis, specifically for fundus diseases.
-
-There are six notebooks with results for six different fundus datasets: APTOS, G1020, GlaucomaFundus, IDRID, MESSIDOR, and PAPILA. 
+This repository contains the code and resources for the project described above at the Harvard Opthalmology-AI Lab (supervised by Dr. Mohammad Eslami, Dr. Saber Kazeminasab, and Dr. Tobias Elze).
 
 Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for any questions or concerns.
 
-## TODO: ADD A GRAPHIC SHOWING COMPARISONS BETWEEN DATASETS OR OTHER RELEVANT INFORMATION FOR THIS FIELD
+### Repository Information
+
+|    Directory    |      Description     |
+| ------------- | ------------- |
+| Data | Contains Google Drive Links to the Six Datasets that were downloaded to be used in this study as well as information about the dataset. |
+| Models | Contains .py files for the construction of the four quantum machine learning algorithms and their classical counterparts.  |
+| Notebooks | Contains the Google Colab Notebooks that we ran to obtain our results for this study.  |
+| Scripts | Contains with .py files for End-To-End Running of Training, Validating, and Testing of the four quantum machine models and their classical counterparts on the six datasets.) |
 
 
-ToDO:
--Move notebooks to notebook directory
--in the data directory, make a readme and describe the source of data and if necessary mention save them here
--fill the scripts:
--- save all model definitions including retfound in the models.py
--- save all the trainers, testers and evaluators definitions in trainers_testers.py
--- put any other function and class definitions in utils.py
 
--for each dataset make a script e.g. main_end2end_aptos.py and include training and evaluation and saving the pickles
--fill free to have a seperate script for plotting
+
