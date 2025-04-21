@@ -13,7 +13,7 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 | Data | Contains Google Drive Links to the Six Datasets that were downloaded to be used in this study as well as information about the dataset. |
 | Models | Contains .py files for the construction of the four quantum machine learning algorithms and their classical counterparts.  |
 | Notebooks | Contains the Google Colab Notebooks that we ran to obtain our results for this study.  |
-| Scripts | Contains with .py files for End-To-End Running of Training, Validating, and Testing of the four quantum machine models and their classical counterparts on the six datasets.) |
+| Scripts | Contains .py files for End-To-End Running of Training, Validating, and Testing of the four quantum machine models and their classical counterparts on the six datasets.) |
 
 
 
