@@ -20,12 +20,12 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 | Notebooks | Contains the Google Colab Notebooks that we ran to obtain our results for this study.  |
 | Scripts | Contains .py files for End-To-End Running of Training, Validating, and Testing of the four quantum machine models and their classical counterparts on the six datasets.) |
 
-# Parameterized-Quantum-Circuit-Based QML Algorithms ( Hybrid Quantum-Classical ResNet-18 and Hybrid Quantum Neural Network-Parallel) .py Files:
+### Parameterized-Quantum-Circuit-Based QML Algorithms ( Hybrid Quantum-Classical ResNet-18 and Hybrid Quantum Neural Network-Parallel) .py Files:
 The trainers_testers.py file contains the methods used to train, validate, and test the PQC-Based QML Algorithms.
 
 The utils.py file contains the methods for loading data and plotting loss, accuracy, and AUROC curves for the  PQC-Based QML Algorithms.
 
-# Kernel-Based QML Algorithms (Quantum SVM and Quantum KNN) Files:
+### Kernel-Based QML Algorithms (Quantum SVM and Quantum KNN) Files:
 
 The kernels_trainers_testers.py file contains the methods used to train, validate, and test the Kernel-Based QML Algorithms.
 
