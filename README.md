@@ -17,4 +17,6 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 
 
 
-[QMLModelFigures.pdf](https://github.com/user-attachments/files/19839633/QMLModelFigures.pdf)
+
+![QMLModelFigures (1)](https://github.com/user-attachments/assets/580ccd62-5f33-4804-ad75-b3f05582b201)
+
