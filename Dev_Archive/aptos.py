@@ -8,7 +8,7 @@ from torchvision import datasets, transforms
 import copy
 import random
 from models.Classical_Resnet_18 import NormalModel
-from models.Hybrid_Quantum-Classical_Resnet18 import QuantumHybridModel
+from models.Hybrid_Quantum_Classical_Resnet18 import QuantumHybridModel
 from trainers_testers import train_validate_model, test 
 from utils import plot, set_seed, load_data
 

@@ -10,7 +10,7 @@ import torch.optim as optim
 from torch.optim import lr_scheduler
 import torchvision
 from torchvision import datasets, transforms
-
+import time
 
 n_qubits = 4                # Number of qubits
 step = 0.0004               # Learning rate
