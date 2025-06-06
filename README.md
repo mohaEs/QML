@@ -1,8 +1,16 @@
 # Code for "Reproducibility Report: Quantum Machine Learning Methods in Fundus Analysis – A Benchmark Study"
 
-This study aims to evaluate the performance of various quantum machine learning algorithms compared to classical machine learning algorithms for the detection of glaucoma and diabetic retinopathy. Four different quantum machine learning algorithms (Hybrid Quantum-Classical ResNet-18, Hybrid Quantum Neural Network-Parallel, Quantum Support Vector Machines, and Quantum K-Nearest Neighbors Algorithms) were tested alongside their classical counterparts (Classical ResNet-18, Classical Convolutional Neural Network, Classical Support Vector Machines, and Classical K-Nearest Neighbors Algorithms) were tested on six different fundus datasets: APTOS (Diabetic Retinopathy), IDRID (Diabetic Retinopathy), MESSIDOR (Diabetic Retinopathy, G1020 (Glaucoma), GlaucomaFundus (Glaucoma), and PAPILA (Glaucoma). This open-source benchmark with reproducible scripts is the first-of-its-kind in opthalmic AI and is crucial for the reliable development of novel quantum machine learning techniques for medical diagnosis.
+This project benchmarks quantum and classical machine learning algorithms for detecting glaucoma and diabetic retinopathy using six public fundus image datasets. It includes:
 
-This repository contains the code and resources for the project described above at the Harvard Opthalmology-AI Lab (supervised by Dr. Mohammad Eslami, Dr. Saber Kazeminasab, and Dr. Tobias Elze).
+    Quantum models: Hybrid QNN-ResNet18, QNN-Parallel, Quantum SVM, Quantum KNN
+
+    Classical counterparts: ResNet18, CNN, SVM, KNN
+
+    Datasets: APTOS, IDRID, MESSIDOR (DR); G1020, GlaucomaFundus, PAPILA (Glaucoma)
+
+This is the first open-source benchmark in ophthalmic AI comparing quantum and classical approaches, with fully reproducible code for medical imaging tas
+
+This repository contains the code and resources for the project described above at the Harvard Opthalmology-AI Lab (supervised by Dr. Mohammad Eslami).
 
 Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for any questions or concerns.
 
@@ -16,21 +24,20 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 |    Directory    |      Description     |
 | ------------- | ------------- |
 | Data | Contains Google Drive Links to the Six Datasets that were downloaded to be used in this study as well as information about the dataset. |
-| Models | Contains .py files for the construction of the four quantum machine learning algorithms and their classical counterparts.  |
 | Notebooks | Contains the Google Colab Notebooks that we ran to obtain our results for this study.  |
-| Scripts | Contains .py files for End-To-End Running of Training, Validating, and Testing of the four quantum machine models and their classical counterparts on the six datasets.) |
 
-### Parameterized-Quantum-Circuit-Based QML Algorithms ( Hybrid Quantum-Classical ResNet-18 and Hybrid Quantum Neural Network-Parallel) .py Files:
-The trainers_testers.py file contains the methods used to train, validate, and test the PQC-Based QML Algorithms.
+## Notice:
+1-Download the listed in Data/ReadMe.md  </br>
+  Look at the *tree_output.txt* to organize your data correctly. 
 
-The utils.py file contains the methods for loading data and plotting loss, accuracy, and AUROC curves for the  PQC-Based QML Algorithms.
+2-Download the retfound pretrained model (RETFound_cfp_weights.pth) and place it correctly (follow the tree_output.txt)
 
-### Kernel-Based QML Algorithms (Quantum SVM and Quantum KNN) Files:
+## Citation:
+If you found this repository and benchamrks usefull, please cite the following paper:
 
-The kernels_trainers_testers.py file contains the methods used to train, validate, and test the Kernel-Based QML Algorithms.
+"Reproducibility Report: Quantum Machine Learning Methods in Fundus Analysis – A Benchmark Study", Nature Eye, 2025
 
-The kernels_utils.py file contains the methods for loading data and plotting loss, accuracy, and AUROC curves for the  Kernel-Based QML Algorithms.
-
-
+## References:
+RETFound
 
 

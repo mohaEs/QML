@@ -1,0 +1,73 @@
+.
+├── Data
+│   ├── APTOS2019
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── G1020
+│   │   ├── g1020.csv
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── Glaucoma_fundus
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── IDRiD_data
+│   │   ├── IDRID.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── MESSIDOR2
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── PAPILA
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── ReadMe.md
+│   └── Vectors
+│       ├── APTOS2019
+│       ├── G1020
+│       ├── GlaucomaFundus
+│       ├── IDRID
+│       ├── MESSIDOR
+│       └── PAPILA
+├── Notebooks
+│   ├── 1-A
+│   │   ├── ResNet_18_QML_APTOS.ipynb
+│   │   ├── ResNet_18_QML_G1020 (2).ipynb
+│   │   ├── ResNet18_QML_GLAUCOMAFUNDUS.ipynb
+│   │   ├── ResNet18_QML_IDRID (1).ipynb
+│   │   ├── ResNet18_QML_Messidor (1).ipynb
+│   │   └── ResNet18_QML_PAPILA (1).ipynb
+│   ├── 1-B
+│   │   ├── HQNN_Parallel_APTOS (1).ipynb
+│   │   ├── HQNN_Parallel_G1020 (2).ipynb
+│   │   ├── HQNN_Parallel_GLAUCOMAFUNDUS (1).ipynb
+│   │   ├── HQNN_Parallel_IDRID (1).ipynb
+│   │   ├── HQNN_Parallel_Messidor (1).ipynb
+│   │   └── HQNN_Parallel_PAPILA (1).ipynb
+│   └── 2-A+2-B
+│       ├── Kernel_Based_APTOS.ipynb
+│       ├── Kernel_Based_G1020.ipynb
+│       ├── Kernel_Based_GLAUCOMAFUNDUS.ipynb
+│       ├── Kernel_Based_IDRID.ipynb
+│       ├── Kernel_Based_MESSIDOR.ipynb
+│       ├── Kernel_Based_PAPILA.ipynb
+│       ├── m
+│       ├── models_vit.py
+│       ├── __pycache__
+│       └── results.ipynb
+├── README.md
+├── requirements.txt
+├── RETFound
+│   └── RETFound_cfp_weights.pth
+└── tree_output.txt
+
+65 directories, 110 files

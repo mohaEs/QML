@@ -1,0 +1,178 @@
+.
+├── Data
+│   ├── APTOS2019
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── G1020
+│   │   ├── g1020.csv
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── Glaucoma_fundus
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── IDRiD_data
+│   │   ├── IDRID.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── MESSIDOR2
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── PAPILA
+│   │   ├── readme.txt
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   ├── ReadMe.md
+│   └── Vectors
+│       ├── APTOS2019
+│       ├── G1020
+│       ├── GlaucomaFundus
+│       ├── IDRID
+│       ├── MESSIDOR
+│       └── PAPILA
+├── Dev_Archive
+│   ├── aptos.py
+│   ├── kernel_methods_trainers_testers.py
+│   ├── kernel_methods_utils.py
+│   ├── models
+│   │   ├── Classical_CNN.py
+│   │   ├── Classical_Resnet_18.py
+│   │   ├── Hybrid_Quantum_Classical_Resnet18.py
+│   │   ├── Hybrid_Quantum_Neural_Network_Parallel.py
+│   │   ├── KNN.py
+│   │   ├── __pycache__
+│   │   ├── QKNN.py
+│   │   ├── QSVM.py
+│   │   └── SVM.py
+│   ├── Scripts
+│   │   ├── 1-A
+│   │   ├── 1-B
+│   │   └── 2-A+2-B
+│   ├── trainers_testers.py
+│   └── utils.py
+├── Notebooks
+│   ├── 1-A
+│   │   ├── ResNet_18_QML_APTOS.ipynb
+│   │   ├── ResNet_18_QML_G1020 (2).ipynb
+│   │   ├── ResNet18_QML_GLAUCOMAFUNDUS.ipynb
+│   │   ├── ResNet18_QML_IDRID (1).ipynb
+│   │   ├── ResNet18_QML_Messidor (1).ipynb
+│   │   └── ResNet18_QML_PAPILA (1).ipynb
+│   ├── 1-B
+│   │   ├── HQNN_Parallel_APTOS (1).ipynb
+│   │   ├── HQNN_Parallel_G1020 (2).ipynb
+│   │   ├── HQNN_Parallel_GLAUCOMAFUNDUS (1).ipynb
+│   │   ├── HQNN_Parallel_IDRID (1).ipynb
+│   │   ├── HQNN_Parallel_Messidor (1).ipynb
+│   │   └── HQNN_Parallel_PAPILA (1).ipynb
+│   └── 2-A+2-B
+│       ├── Kernel_Based_APTOS.ipynb
+│       ├── Kernel_Based_G1020.ipynb
+│       ├── Kernel_Based_GLAUCOMAFUNDUS.ipynb
+│       ├── Kernel_Based_IDRID.ipynb
+│       ├── Kernel_Based_MESSIDOR.ipynb
+│       ├── Kernel_Based_PAPILA.ipynb
+│       ├── m
+│       ├── models_vit.py
+│       ├── __pycache__
+│       └── results.ipynb
+├── QMLExperiments
+│   ├── APTOS_models_QNN-Parallel
+│   │   ├── normal_model_100_metrics.pkl
+│   │   ├── normal_model_100.pth
+│   │   ├── normal_model_3_metrics.pkl
+│   │   ├── normal_model_3.pth
+│   │   ├── normal_model_74_metrics.pkl
+│   │   ├── normal_model_74.pth
+│   │   ├── quantum_hybrid_model_100_metrics.pkl
+│   │   ├── quantum_hybrid_model_100.pth
+│   │   ├── quantum_hybrid_model_3_metrics.pkl
+│   │   ├── quantum_hybrid_model_3.pth
+│   │   ├── quantum_hybrid_model_74_metrics.pkl
+│   │   └── quantum_hybrid_model_74.pth
+│   ├── Feature_Models
+│   │   ├── APTOS_models
+│   │   ├── G1020_models
+│   │   ├── GlaucomaFundus_models
+│   │   ├── IDRID_models
+│   │   ├── MESSIDOR_models
+│   │   └── PAPILA_models
+│   ├── G1020_models_QNN-Parallel
+│   │   ├── normal_model_74_metrics.pkl
+│   │   ├── normal_model_74.pth
+│   │   ├── quantum_hybrid_model_74_metrics.pkl
+│   │   └── quantum_hybrid_model_74.pth
+│   ├── GLAUCOMAFUNDUS_models_QNN-Parallel
+│   │   ├── normal_model_52_metrics.pkl
+│   │   ├── normal_model_52.pth
+│   │   ├── quantum_hybrid_model_52_metrics.pkl
+│   │   └── quantum_hybrid_model_52.pth
+│   ├── IDRID_models_QNN-Parallel
+│   │   ├── normal_model_28_metrics.pkl
+│   │   ├── normal_model_28.pth
+│   │   ├── quantum_hybrid_model_28_metrics.pkl
+│   │   └── quantum_hybrid_model_28.pth
+│   ├── MESSIDOR_models_QNN-Parallel
+│   │   ├── normal_model_25_metrics.pkl
+│   │   ├── normal_model_25.pth
+│   │   ├── quantum_hybrid_model_25_metrics.pkl
+│   │   └── quantum_hybrid_model_25.pth
+│   ├── PAPILA_models_QNN-Parallel
+│   │   ├── normal_model_48_metrics.pkl
+│   │   ├── normal_model_48.pth
+│   │   ├── quantum_hybrid_model_48_metrics.pkl
+│   │   └── quantum_hybrid_model_48.pth
+│   ├── Resnet-18-APTOS_models
+│   │   ├── 34_test_results.pkl
+│   │   ├── normal_model_34_metrics.pkl
+│   │   ├── normal_model_34.pth
+│   │   ├── quantum_hybrid_model_34_metrics.pkl
+│   │   └── quantum_hybrid_model_34.pth
+│   ├── Resnet-18-G1020_models
+│   │   ├── normal_model_70_metrics.pkl
+│   │   ├── normal_model_70.pth
+│   │   ├── quantum_hybrid_model_47_metrics.pkl
+│   │   └── quantum_hybrid_model_47.pth
+│   ├── Resnet-18-GLAUCOMAFUNDUS_models
+│   │   ├── normal_model_73_metrics.pkl
+│   │   ├── normal_model_73.pth
+│   │   ├── quantum_hybrid_model_73_metrics.pkl
+│   │   └── quantum_hybrid_model_73.pth
+│   ├── Resnet-18-IDRID_models
+│   │   ├── normal_model_26_metrics.pkl
+│   │   ├── normal_model_26.pth
+│   │   ├── normal_model_59_metrics.pkl
+│   │   ├── normal_model_59.pth
+│   │   ├── normal_model_93_metrics.pkl
+│   │   ├── normal_model_93.pth
+│   │   ├── quantum_hybrid_model_26_metrics.pkl
+│   │   ├── quantum_hybrid_model_26.pth
+│   │   ├── quantum_hybrid_model_59_metrics.pkl
+│   │   ├── quantum_hybrid_model_59.pth
+│   │   ├── quantum_hybrid_model_93_metrics.pkl
+│   │   └── quantum_hybrid_model_93.pth
+│   ├── Resnet-18-MESSIDOR_models
+│   │   ├── normal_model_14_metrics.pkl
+│   │   ├── normal_model_14.pth
+│   │   ├── quantum_hybrid_model_14_metrics.pkl
+│   │   └── quantum_hybrid_model_14.pth
+│   └── Resnet-18-PAPILA_models
+│       ├── normal_model_73_metrics.pkl
+│       ├── normal_model_73.pth
+│       ├── quantum_hybrid_model_73_metrics.pkl
+│       └── quantum_hybrid_model_73.pth
+├── README.md
+├── requirements.txt
+├── RETFound
+│   └── RETFound_cfp_weights.pth
+└── tree_output.txt
+
+65 directories, 110 files
