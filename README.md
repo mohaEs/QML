@@ -8,7 +8,7 @@ This project benchmarks quantum and classical machine learning algorithms for de
 
     Datasets: APTOS, IDRID, MESSIDOR (DR); G1020, GlaucomaFundus, PAPILA (Glaucoma)
 
-This is the first open-source benchmark in ophthalmic AI comparing quantum and classical approaches, with fully reproducible code for medical imaging tas
+This is the first open-source benchmark in ophthalmic AI comparing quantum and classical approaches, with fully reproducible code for medical imaging tasks.
 
 This repository contains the code and resources for the project described above at the Harvard Opthalmology-AI Lab (supervised by Dr. Mohammad Eslami).
 
