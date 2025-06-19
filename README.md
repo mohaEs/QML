@@ -30,7 +30,11 @@ Please contact gajanmohanraj@gmail.com or mohammad_eslami@meei.harvard.edu for a
 1-Download the listed in Data/ReadMe.md  </br>
   Look at the *tree_output.txt* to organize your data correctly. 
 
-2-Download the retfound pretrained model (RETFound_cfp_weights.pth) and place it correctly (follow the tree_output.txt)
+2- The tested libraries are python 3.9.22, torch 2.7, PennyLane 0.38, opencv 4.11, timm 1.0.15. </br> Full list available in *piplist.txt*
+
+3-Download the retfound pretrained model (RETFound_cfp_weights.pth) and place it correctly (follow the tree_output.txt)
+
+
 
 ## Citation:
 If you found this repository and benchamrks usefull, please cite the following paper:
